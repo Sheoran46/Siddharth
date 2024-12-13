@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.header {
+    background-color: #0078d7;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-section, .form-section, .preview-section {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+#skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-container span {
+    background-color: #0078d7;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.portfolio-output {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px; /* Ensures the portfolio stays within the desired width */
+    box-sizing: border-box;
+    margin: auto; /* Center-aligns the portfolio section */
+}
+
+.portfolio-output img {
+    max-width: 50%; /* Ensures images do not overflow */
+    height: 25%;
+    display: block;
+    margin: 0 auto 15px auto; /* Center the image and add spacing */
+    border-radius: 8px; /* Optional: Adds rounded corners to images */
+}
+
+.portfolio-output h3 {
+    color: #0078d7;
+    border-bottom: 2px solid #0078d7;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.portfolio-output p, .portfolio-output ul {
+    margin: 10px 0;
+    line-height: 1.6;
+    text-align: justify; /* Makes the text look cleaner */
+    word-wrap: break-word; /* Ensures long words or URLs break properly */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0078d7;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#downloadButton, #generateLinkButton {
+    margin: 10px 5px 0;
+    display: inline-block;
+    width: auto;
+}
+.project-block, .certification-block {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.files-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.file-item {
+    margin: 5px;
+}
+

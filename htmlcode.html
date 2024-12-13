@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Portfolio Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Online Portfolio Builder</h1>
+    </header>
+
+    <main class="container">
+        <!-- Authentication Section -->
+        <section class="auth-section" id="authSection">
+            <h2>Welcome</h2>
+            <form id="authForm">
+                <div class="form-group">
+                    <label for="userId">User ID:</label>
+                    <input type="text" id="userId" placeholder="Enter your user ID" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="button" id="loginButton">Log In</button>
+                <button type="button" id="signupButton">Sign Up</button>
+            </form>
+        </section>
+
+        <!-- Form Section -->
+        <section class="form-section" id="portfolioBuilderSection" style="display: none;">
+            <form id="portfolioForm">
+                <h2>Create Your PortFolio</h2>
+                <!-- Personal Information Section -->
+                <div class="profile-input">
+                    <label for="profilePicture">Upload Profile Picture:</label>
+                    <input type="file" id="profilePicture" accept="image/*">
+                    <input type="text" id="name" placeholder="Enter Your Full Name" required>
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                    <input type="tel" id="phone" placeholder="Enter Your Phone Number">
+                </div>
+                
+                <!-- Professional Summary -->
+                <div class="form-group">
+                    <label for="summary">Statement of Originality:</label>
+                    <textarea id="summary" placeholder="Write a brief professional statement of originality that describes that the workdone by you is original and copy-pasted"></textarea>
+                </div>
+
+                <!-- Experience Section -->
+                <div class="form-group">
+                    <label for="experience">Career Summary:</label>
+                    <textarea id="experience" placeholder="Describe your past job experiences"></textarea>
+                </div>
+
+                <!-- Education Section -->
+                <div class="form-group">
+                    <label for="education">Education:</label>
+                    <textarea id="education" placeholder="Describe your educational background"></textarea>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="form-group">
+                    <label for="skillName">Add Skills:</label>
+                    <input type="text" id="skillName" placeholder="Enter a skill">
+                    <button type="button" id="addSkillButton">Add Skill</button>
+                    <div id="skillsContainer" class="skills-container"></div>
+                </div>
+
+                <!-- Projects Section -->
+<div class="form-group">
+    <label for="projects">Projects</label>
+    <input type="text" id="projects" name="projects" class="form-control" placeholder="Enter your projects">
+    <label for="projectFile">Upload Project File (PDF, Image)</label>
+    <input type="file" id="projectFile" name="projectFile" class="form-control">
+</div>
+
+                <!-- Certifications Section -->
+<div class="form-group">
+    <label for="certifications">Certifications</label>
+    <input type="text" id="certifications" name="certifications" class="form-control" placeholder="Enter your certifications">
+    <label for="certificationFile">Upload Certification File (PDF, Image)</label>
+    <input type="file" id="certificationFile" name="certificationFile" class="form-control">
+</div>
+
+
+                <!-- Languages Section -->
+                <div class="form-group">
+                    <label for="languages">Languages:</label>
+                    <textarea id="languages" placeholder="Languages you speak"></textarea>
+                </div>
+
+                <!-- Social Media Section -->
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn:</label>
+                    <input type="url" id="linkedin" placeholder="LinkedIn Profile URL">
+                    <label for="github">GitHub:</label>
+                    <input type="url" id="github" placeholder="GitHub Profile URL">
+                </div>
+
+                <button type="button" id="generateButton">Generate Portfolio</button>
+                <button type="button" id="saveButton">Save Portfolio</button>
+            </form>
+        </section>
+
+        <!-- Portfolio Preview -->
+        <!-- Portfolio Preview -->
+<section class="preview-section" id="outputSection" style="display: none;">
+    <h2>Your Portfolio</h2>
+    <div id="portfolioOutput" class="portfolio-output"></div>
+    <button id="downloadButton">Download Portfolio</button>
+    <button id="generateLinkButton">Generate Portfolio Link</button>  <!-- New Button -->
+</section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Portfolio Builder</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
